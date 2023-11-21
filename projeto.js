@@ -2,8 +2,7 @@ class Funcionario {
     _ID = 0
     constructor (nome) {
         this.nome = nome
-    }
-// O constructor serve para criar e inicializar um objeto criado a partir de uma classe.
+    } // O constructor serve para criar e inicializar um objeto criado a partir de uma classe.
     setarID(novoID){
         if (typeof novoID == "string") {
             this._ID = novoID
@@ -12,14 +11,12 @@ class Funcionario {
 
     get  _ID (){
         return this._ID
-    }
-// O get (pegar) serve para obter e retornar o valor “setado”.
+    } // O get (pegar) serve para obter e retornar o valor “setado”.
     set _ID (x) {
         if (typeof x == "string") {
             this.ID
         }
-    }
-   // O set (atribuir) receber os dados dos atributos e injetá-los.
+    } // O set (atribuir) receber os dados dos atributos e injetá-los.
 }
 
 let p1 = new Funcionario ("Leo");
