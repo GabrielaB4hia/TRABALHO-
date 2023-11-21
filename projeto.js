@@ -32,7 +32,7 @@ p2._ID = 1098
 p3._ID = 5431
 p4._ID = 2454
 
-class Cliente extends fucionario {
+class Cliente extends Funcionario {
     constructor (Cliente) {
     Super(nome)
     this.Cliente = Cliente
