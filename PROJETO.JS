@@ -32,18 +32,18 @@ p2._ID = 1098
 p3._ID = 5431
 p4._ID = 2454
 
-class Cliente {
+class Cliente extends fucionario {
     constructor (Cliente) {
-    this.Cliente = Cliente}
+    Super(nome)
+    this.Cliente = Cliente
+
 }
 p1.Cliente =("Maria");
 p2.Cliente = ("Neymar");
 
 
-class Pedido extends Cliente {
-// O extends serve para uma classe como filha de uma outra classe e quando queremos usar herança numa classe.
+class Pedido  {
     constructor (Pedido) {
-    super (nome);
     this.Pedido = Pedido }
 
 }
@@ -57,7 +57,7 @@ console.log (`${p1.nome} de ID ${p1._ID} Atribuiu o atendimento o(a) ${p1.Client
 console.log (`${p2.nome} de ID ${p2._ID} Atribuiu o atendimento o(a) ${p2.Cliente} que pediu ${p2.Pedido}`)
 
 
-class Entrega extends Cliente{
+class Entrega {
     constructor(Entrega){
         this.Entrega = Entrega
     }
@@ -70,9 +70,8 @@ console.log (`Funcionario ${p1.nome} de id ${p1._ID} enviou o pedido da cliente 
 console.log (`Funcionaria ${p2.nome} de id ${p1._ID} enviou o pedido do cliente ${p2.Cliente} que mora ${p2.Entrega}`)
 
 
-class Pagamento extends Cliente {
+class Pagamento  {
     constructor (TipoPagamento) {
-        super (nome);
         this.TipoPagamento = TipoPagamento
     }
 }
@@ -84,4 +83,4 @@ p4.TipoPagamento = ("Dinheiro")
 
 
 console.log (`Cliente ${p1.Cliente} efetuou o pagamento via ${p1.TipoPagamento}`)
-console.log (`Cliente ${p2.Cliente} efetuou o pagamento via ${p3.TipoPagamento}`)
+console.log (`Cliente ${p2.Cliente} efetuou o pagamento via ${p3.TipoPagamento}`)p2.Cliente} efetuou o pagamento via ${p3.TipoPagamento}`)
